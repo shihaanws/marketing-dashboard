@@ -1,5 +1,13 @@
 
-export default function Stats({ totals }: unknown) {
+type StatsProps = {
+  totals: {
+    spend: number
+    conversions: number
+    ctr: number
+  }
+}
+
+export default function Stats({ totals }: StatsProps) {
   return (
     <div style={{ display: "flex", gap: 30, margin: "20px 0" }}>
       <div>Spend: ${totals.spend.toFixed(2)}</div>
