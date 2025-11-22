@@ -1,11 +1,5 @@
 
 import './App.css'
-
-
-
-
-
-
 import React, { useMemo } from "react";
 import { useAppSelector } from "./store/hooks";
 import Table from "./components/Table";
